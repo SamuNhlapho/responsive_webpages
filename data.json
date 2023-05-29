@@ -1,0 +1,49 @@
+{
+    "user" : {
+        "fullName": "Samukelisiwe Nhlapho",
+        "photo" : "IMG-20230111-WA0047.jpg"
+    },
+    "city" : {
+        "name" : "Agra, Uttar Pradesh",
+        "photo" : "Agra.jpg",
+        "description" : "Agra is one of the cities in India that has beautiful historical tourist sites. It is rich in the Indian culture, therefore one is guaranteed to learn a lot about India in one city. One of the most iconic mausoleum found in Agra is the Taj Mahal."
+    },
+    "foreignLanguage" : {
+        "language" : "Hindi",
+        "description" : " I want to learn hindi because I am tired of reading subtitles when I am watching bollywood movies.",
+        "phrases" : [{
+            "foreignPhrase" : "Kuchh to hoga",
+            "englishPhrase" : "Something will happen"
+        },
+        {
+            "foreignPhrase" : "Jaldi hi milenge",
+            "englishPhrase" : "See you soon"
+        },
+        {
+            "foreignPhrase" : "Main tumse pyar karta/ti hoon",
+            "englishPhrase" : "I love you"
+        }
+    ]
+    },
+    "favouriteSubjects" : {
+        "Qualification" : "BSc Honours in Chemistry",
+        "Institutiion" : "University of Johannesburg",
+        "Subjects" : [
+        {
+            "name" : "Atomic Spectroscopy",
+            "photo" :"Atomic Absorption.jpg",
+            "description" : "Determination of elemental composition by its electromagnetic or mass spectrum. It consists of Atomic Absorption and Atomic Emission spectroscopy."
+        },
+        {
+            "name" : "Instrumental Analysis",
+            "photo" :"instrumental-analysis-.png",
+            "description" : "instrumental method of analysis is the part of analytical chemistry. Methods are based on the measurement of optical, electrical, thermal and other properties."
+        },
+        {
+            "name" : "Structural Chemistry",
+            "photo" :"Structural Chem.png",
+            "description" : "Its a part of chemistry and it deals with spatial structures of molecules in the gaseous, liquid or solid state."
+        }
+    ]
+  }
+}

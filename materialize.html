@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color:grey;">
+    <main class="container">
+        <div class="pink-text"><h1><strong>Introduction</strong></h1></div> 
+        <div class="row">
+            <div class="col s12 m6 yellow-text"><h3><strong>{{user.fullName}}</strong></h3></div>
+            <div class=" text-center col s12 m6"><img src="{{user.photo}}" width="250" ></div>
+        </div> 
+        <br>
+        <div class="divider container"></div>
+        <br>
+        <div class="container">
+            <a href="./index.html" class="btn btn-primary">Home</a>
+            <br>
+            <span class="color"><a href="./index.html">Home/</a><a href="#">Materialize</a></span>
+        </div>
+    <div> 
+        <div class="pink-text"><h1><strong>Which City?</strong></h1></div>
+        <br>
+          <div class="yellow-text"><h4>{{city.name}}</h4> </div>
+        <div class="row">
+            <div class="col s12 m6"><img src="{{city.photo}}" width="350"> </div>
+            <div class="col s12 m6"><p>{{city.description}}</p></div>
+        </div>
+    </div>
+    <div class="pink-text"><h1><strong>Foreign Language</strong></h1></div>
+        <div> 
+          <div class="yellow-text">
+            <h2>{{foreignLanguage.language}}</h2>
+          </div>  
+          <div> {{foreignLanguage.description}} </div>
+          <br>
+          <div><h3> Hindi and English phrases</h3></div>
+    
+          <table class="table table-bordered">
+            
+                <tr>
+                    <th scope="col">Hindi Phrase</th>
+                    <th scope="col">English Phrase</th>
+                </tr>
+         
+                {{#each foreignLanguage.phrases}}
+                <tr>
+                    <td>{{foreignPhrase}}</td>
+                    <td>{{englishPhrase}}</td>
+                </tr>
+                {{/each}}
+        </table>
+        </div>
+    
+        <section class="studied">
+            <div class="pink-text"><h1><strong>Qualification information</strong></h1></div>
+    <h3><strong>Qualification and Institution?</strong></h3>
+    <div class="yellow-text">
+        <p><h4>{{favouriteSubjects.Qualification}}</h4></p>
+        <p><h4>{{favouriteSubjects.Institutiion}}</h4></p>
+    </div>
+      </section>
+    
+      <section class="subjects">
+        <div><h3><strong>Favourite Subjects</strong></h3></div>
+        
+        <div class="row">
+                {{#each favouriteSubjects.Subjects}}
+                <div class="col s12 m6">
+                   
+                      <div class="card-content">
+                <span class="card-title"><h6><strong>{{name}}</h6></strong></span>
+                <p>{{description}}</p>
+                <img src="{{photo}}" width="200">
+            </div>
+      </div>
+                {{/each}}
+        </div>
+    </section>
+    
+    </main>
+  
+</body>
+</html>
