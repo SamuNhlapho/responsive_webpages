@@ -11,38 +11,35 @@
 
 </head>
 
-<body style="background-color:skyblue;">
-    <main class="container">
-        <h1><strong>Introduction</strong></h1>
+<body style="background-color:skyblue; text-white;">
+
+        <div class="p-3 mb-2 bg-Primary text-danger">
+        <section class="heading text-center text-decoration-underline"><h1>Samu's Personal Webpage</h1></section>
+        <h1><strong><u>Introduction</u></strong></h1>
         <br>
         <div class="row">
             <div class="col-md-5">
                 <h2><strong>{{user.fullName}}</strong></h2>
             </div>
-            <div class="col-md"><img src="{{user.photo}}" width="200"></div>
+            <div class="col-md"><img src="{{user.photo}}" class="rounded border border-danger" width="250"></div>
         </div>
+   
         <br>
-        <div class="divider container"></div>
-        <br>
-        <div class="container">
-            <a href="./index.html" class="btn btn-primary">Home</a>
-            <br>
-            <span class="color"><a href="./index.html">Home/</a><a href="#">Bootstrap</a></span>
-        </div>
-        <br>
-        <div>
-            <h1><strong>Which City?</strong></h1>
+    <div class="divider"></div>
+    <div class="section">
+            <h1><strong><u>Which City?</u></strong></h1>
             <br>
             <h2><strong>{{name}}</strong></h2>
             <div class="row">
-                <div class="col-md-4"><img src="{{city.photo}}" width="300"> </div>
+                <div class="col-md-4"><img src="{{city.photo}}" class="rounded border border-danger" width="350"> </div>
                 <div class="col">
                     <p>{{city.description}}</p>
                 </div>
             </div>
-        </div>
+    </div>
         <br>
-        <h1><strong>Foreign Language</strong></h1>
+        
+        <h1><strong><u>Foreign Language</u></strong></h1>
         <div>
             <div>
                 <h2><strong>{{foreignLanguage.language}}</strong></h2>
@@ -53,11 +50,12 @@
                 <h3> Hindi and English phrases</h3>
             </div>
 
-            <table class="table table-bordered">
-
+            <table class="table table-bordered table-hover border-danger">
+                <tbody class="table-group-divider border-danger">
                 <tr>
                     <th scope="col">Hindi Phrase</th>
                     <th scope="col">English Phrase</th>
+                    <tbody class="table-group-divider border-danger">
                 </tr>
 
                 {{#each foreignLanguage.phrases}}
@@ -65,20 +63,18 @@
                     <td>{{foreignPhrase}}</td>
                     <td>{{englishPhrase}}</td>
                 </tr>
+            </tbody>
+        </tbody>
                 {{/each}}
             </table>
         </div>
 
         <section class="studied">
-            <h1><strong>Qualification information</strong></h1>
+            <h1><strong><u>Qualification information</u></strong></h1>
             <br>
             <h3><strong>Qualification and Institution?</strong></h3>
-            <p>
-            <h4>{{favouriteSubjects.Qualification}}</h4>
-            </p>
-            <p>
-            <h4>{{favouriteSubjects.Institutiion}}</h4>
-            </p>
+            <p><li>{{favouriteSubjects.Qualification}}</li></p>
+            <p><li>{{favouriteSubjects.Institutiion}}</li></p>
             <br>
         </section>
 
@@ -88,18 +84,26 @@
             </div>
             <br>
 
-            <div class="row">
-                {{#each favouriteSubjects.Subjects}}
-                <div class="col">
-                    <h6><strong>{{name}}</h6></strong>
-                    <img src="{{photo}}" width="200">
-                    <p>{{description}}</p>
-                </div>
+    <div class="row">
+        {{#each favouriteSubjects.Subjects}}
+        <div class="col">
+            <h6><strong>{{name}}</h6></strong>
+            <img src="{{photo}}" class="rounded border border-danger" width="200">
+            <p>{{description}}</p>
+        </div>
+                
                 {{/each}}
             </div>
         </section>
-
-    </main>
+    </div>
+    <div class="divider container"></div>
+    <br>
+    <div class="container">
+        <a href="./index.html" class="btn btn-primary">Home</a>
+        <br>
+        <span class="color"><a href="./index.html">Home/</a><a href="#">Bootstrap</a></span>
+    </div>
+    <br>
 </body>
 
 </html>

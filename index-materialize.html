@@ -10,39 +10,43 @@
 </head>
 
 <body style="background-color:grey;">
-    <main class="container">
-        <div class="pink-text">
-            <h1><strong>Introduction</strong></h1>
+
+        <div class="white-text">
+            <section class="heading center-align"><h4><u>Samu's Personal Webpage</u></h4></section>
+            <h2><strong><u>Introduction</u></strong></h2>
         </div>
         <div class="row">
             <div class="col s12 m6 yellow-text">
                 <h3><strong>{{user.fullName}}</strong></h3>
             </div>
-            <div class=" text-center col s12 m6"><img src="{{user.photo}}" width="250"></div>
+            <div class="text-center col s12 m6"><img src="{{user.photo}}" class="rounded border border-danger" width="250"></div>
         </div>
-        <br>
-
+        <div class="divider"></div>
+        <div class="section">
         <div>
-            <div class="pink-text">
-                <h1><strong>Which City?</strong></h1>
+            <div class="white-text">
+                <h2><strong><u>Which City?</u></strong></h2>
             </div>
             <br>
             <div class="yellow-text">
                 <h4>{{city.name}}</h4>
             </div>
             <div class="row">
-                <div class="col s12 m6"><img src="{{city.photo}}" width="350"> </div>
+                <div class="col s12 m4"><img src="{{city.photo}}" class="rounded border border-danger" width="350"> </div>
                 <div class="col s12 m6">
                     <p>{{city.description}}</p>
                 </div>
             </div>
         </div>
-        <div class="pink-text">
-            <h1><strong>Foreign Language</strong></h1>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+        <div class="white-text">
+            <h2><strong><u>Foreign Language</u></strong></h2>
         </div>
         <div>
             <div class="yellow-text">
-                <h2>{{foreignLanguage.language}}</h2>
+                <h3>{{foreignLanguage.language}}</h3>
             </div>
             <div> {{foreignLanguage.description}} </div>
             <br>
@@ -65,26 +69,22 @@
                 {{/each}}
             </table>
         </div>
-
+        </div>
+        <div class="divider"></div>
+        <div class="section">
         <section class="studied">
-            <div class="pink-text">
-                <h1><strong>Qualification information</strong></h1>
+            <div class="white-text">
+                <h2><strong><u>Qualification information</u></strong></h2>
             </div>
             <h3><strong>Qualification and Institution?</strong></h3>
             <div class="yellow-text">
-                <p>
-                <h4>{{favouriteSubjects.Qualification}}</h4>
-                </p>
-                <p>
-                <h4>{{favouriteSubjects.Institutiion}}</h4>
-                </p>
+                <p><li>{{favouriteSubjects.Qualification}}</li></p>
+                <p><li>{{favouriteSubjects.Institutiion}}</li></p>
             </div>
         </section>
-
+       
         <section class="subjects">
-            <div>
                 <h3><strong>Favourite Subjects</strong></h3>
-            </div>
 
             <div class="row">
                 {{#each favouriteSubjects.Subjects}}
@@ -95,20 +95,21 @@
                             <h6><strong>{{name}}</h6></strong>
                         </span>
                         <p>{{description}}</p>
-                        <img src="{{photo}}" width="200">
+                        <img src="{{photo}}" class="rounded border border-danger" width="200">
                     </div>
                 </div>
                 {{/each}}
             </div>
-
         </section>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
         <div class="container">
             <a href="./index.html" class="btn btn-primary">Home</a>
             <br>
             <span class="color"><a href="./index.html">Home/</a><a href="#">Materialize</a></span>
         </div>
-    </main>
-
+        </div>
 </body>
 
 </html>

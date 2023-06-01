@@ -6,7 +6,7 @@
     "city" : {
         "name" : "Agra, Uttar Pradesh",
         "photo" : "./Agra.jpg",
-        "description" : "Agra is one of the cities in India that has beautiful historical tourist sites. It is rich in the Indian culture, therefore one is guaranteed to learn a lot about India in one city. One of the most iconic mausoleum found in Agra is the Taj Mahal."
+        "description" : "Agra is a city on the banks of the Yamuna river in the Indian state of Uttar Pradesh, about 230 kilometres south-east of the national capital Delhi and 330 km west of the state capital Lucknow. It is one of the cities in India that has beautiful historical tourist sites. It is rich in the Indian culture, therefore one is guaranteed to learn a lot about India in one city. One of the most iconic mausoleum found in Agra is the Taj Mahal."
     },
     "foreignLanguage" : {
         "language" : "Hindi",
@@ -31,18 +31,18 @@
         "Subjects" : [
         {
             "name" : "Atomic Spectroscopy",
-            "photo" :"./Atomic Absorption.jpg",
-            "description" : "Determination of elemental composition by its electromagnetic or mass spectrum. It consists of Atomic Absorption and Atomic Emission spectroscopy."
+            "photo" :"./Atomic Absorption.png",
+            "description" : "Atomic spectroscopy is an excellent analytical tool used for the detection and measurement of elements in a sample with high precision and confidence. It consists of Atomic Absorption and Atomic Emission spectroscopy."
         },
         {
             "name" : "Instrumental Analysis",
             "photo" :"./instrumental-analysis-.png",
-            "description" : "instrumental method of analysis is the part of analytical chemistry. Methods are based on the measurement of optical, electrical, thermal and other properties."
+            "description" : "Instrumental method of analysis is the part of analytical chemistry. Methods are based on the measurement of optical, electrical, thermal and other properties, may use light interaction, heat interaction, electric fields or magnetic fields."
         },
         {
             "name" : "Structural Chemistry",
             "photo" :"./Structural Chem.png",
-            "description" : "Its a part of chemistry and it deals with spatial structures of molecules in the gaseous, liquid or solid state."
+            "description" : "Structural Chemistry is a part of chemistry and deals with spatial structures of molecules (in the gaseous, liquid or solid state) and solids (with extended structures that cannot be subdivided into molecules)."
         }
     ]
   }
